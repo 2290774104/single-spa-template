@@ -1,0 +1,12 @@
+{
+  "name": "single-spa-template",
+  "version": "1.0.0",
+  "description": "single-spa项目模板",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
