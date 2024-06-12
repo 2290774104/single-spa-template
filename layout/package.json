@@ -16,7 +16,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "4.x",
     "pinia": "^2.1.7",
+    "single-spa": "^6.0.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
@@ -38,6 +41,8 @@
     "jsdom": "^24.0.0",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1",
     "start-server-and-test": "^2.0.3",
     "typescript": "~5.4.0",
     "vite": "^5.2.8",
