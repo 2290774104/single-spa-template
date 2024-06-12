@@ -1,7 +1,7 @@
 {
-  "name": "vue2-template",
+  "name": "app1",
   "version": "0.1.0",
-  "description": "vue2项目模板",
+  "description": "single-spa子应用1(vue2)",
   "author": {
     "name": "唐皓晨",
     "email": "2290774104@qq.com"
@@ -11,7 +11,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve:micro": "vue-cli-service serve --mode micro",
+    "build": "vue-cli-service build --mode buildMicro",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6"
@@ -19,11 +20,13 @@
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "lodash": "^4.17.21",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
+    "single-spa-vue": "^3.0.0",
     "vue": "^2.6.14",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^9.1.2",

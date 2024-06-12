@@ -15,6 +15,11 @@ const routers: Array<RouteConfig> = [
     path: '/',
     name: 'Index',
     component: () => import('@/views/Index.vue')
+  },
+  {
+    path: '/nextPage',
+    name: 'NextPage',
+    component: () => import('@/views/NextPage.vue')
   }
 ];
 
@@ -29,7 +34,7 @@ export const asyncRoutes: Array<RouteConfig> = [];
 
 const createRouter = () =>
   new VueRouter({
-    // mode: 'history',  // Disabled due to Github Pages doesn't support this, enable this if you need.
+    mode: 'history',
     scrollBehavior: (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition;
@@ -37,7 +42,7 @@ const createRouter = () =>
         return { x: 0, y: 0 };
       }
     },
-    base: process.env.BASE_URL,
+    base: process.env.VUE_APP_BASE_URL,
     routes: routers
   });
 
