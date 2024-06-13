@@ -21,7 +21,7 @@ const createScript = (url: string) => {
   })
 }
 
-function loadApp(url: string, globalVar: string) {
+function loadVue2App(url: string, globalVar: string) {
   // 支持远程加载子应用
   return async () => {
     await createScript(url + '/js/chunk-vendors.js')
@@ -34,8 +34,14 @@ function loadApp(url: string, globalVar: string) {
 const apps = [
   {
     name: 'app1',
-    app: loadApp('http://localhost:8081', 'app1'),
+    app: loadVue2App('http://localhost:8081', 'app1'),
     activeWhen: (location: any) => location.pathname.startsWith('/app1'),
+    customProps: {}
+  },
+  {
+    name: 'app2',
+    app: loadVue2App('http://localhost:8082', 'app2'),
+    activeWhen: (location: any) => location.pathname.startsWith('/app2'),
     customProps: {}
   }
 ]

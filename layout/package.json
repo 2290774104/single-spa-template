@@ -20,6 +20,7 @@
     "ant-design-vue": "4.x",
     "pinia": "^2.1.7",
     "single-spa": "^6.0.1",
+    "single-spa-vue": "^3.0.0",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

@@ -1,7 +1,7 @@
 {
-  "name": "app1",
+  "name": "app2",
   "version": "0.1.0",
-  "description": "single-spa子应用1(vue2)",
+  "description": "single-spa子应用2(vue2)",
   "author": {
     "name": "唐皓晨",
     "email": "2290774104@qq.com"

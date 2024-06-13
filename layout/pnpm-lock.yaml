@@ -20,6 +20,9 @@ importers:
       single-spa:
         specifier: ^6.0.1
         version: 6.0.1
+      single-spa-vue:
+        specifier: ^3.0.0
+        version: 3.0.0
       vue:
         specifier: ^3.4.21
         version: 3.4.27(typescript@5.4.5)
@@ -2361,6 +2364,9 @@ packages:
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  single-spa-vue@3.0.0:
+    resolution: {integrity: sha512-aw4KzaELuWo5pev117C0kSPtcj96vVbml+VssIKKs1aSGv2zA1nBK/mW/jlU8J1jEHlvxadBrDNDANVpqPrHxQ==}
 
   single-spa@6.0.1:
     resolution: {integrity: sha512-JsJSnjaeBJ+uZCqKwfI06AsaHlqfr2jvDqz+1we8tDxptYnDEi54C2M6W0XY2FLroro9Wnh3+ooEUEwcOileGg==}
@@ -5183,6 +5189,8 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  single-spa-vue@3.0.0: {}
 
   single-spa@6.0.1: {}
 

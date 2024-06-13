@@ -9,7 +9,10 @@
   "homepage": "https://github.com/2290774104/single-spa-template",
   "repository": "github.com:2290774104/single-spa-template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:layout": "cd ./layout&pnpm run dev",
+    "dev:app1": "cd ./app1&pnpm run dev:micro",
+    "dev:app2": "cd ./app2&pnpm run dev:micro"
   },
   "keywords": [
     "vue",
@@ -17,5 +20,8 @@
     "template",
     "single-spa"
   ],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

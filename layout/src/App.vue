@@ -38,19 +38,14 @@ function getItem(
 
 const items: ItemType[] = reactive([
   getItem('子项目', '1', null, [
-    getItem('Vue', 'vue', null, [getItem('Vue2', 'Vue2'), getItem('Vue3', 'Vue3')], 'group')
+    getItem('Vue', 'vue', null, [getItem('Vue2-1', 'app1'), getItem('Vue2-2', 'app2')], 'group')
   ])
 ])
-
-const routers = {
-  Vue2: '/app1',
-  Vue3: '/app2'
-}
 
 const handleClick: MenuProps['onClick'] = (e) => {
   console.log('click', e)
   router.push({
-    path: routers[e.key]
+    path: `/${e.key}`
   })
 }
 </script>
