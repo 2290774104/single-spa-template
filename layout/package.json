@@ -18,6 +18,7 @@
   "dependencies": {
     "@ant-design/icons-vue": "^7.0.1",
     "ant-design-vue": "4.x",
+    "lodash": "^4.17.21",
     "pinia": "^2.1.7",
     "single-spa": "^6.0.1",
     "single-spa-vue": "^3.0.0",
@@ -28,6 +29,7 @@
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/jsdom": "^21.1.6",
+    "@types/lodash": "^4.17.5",
     "@types/node": "^20.12.5",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",

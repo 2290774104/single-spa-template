@@ -14,6 +14,9 @@ importers:
       ant-design-vue:
         specifier: 4.x
         version: 4.2.3(vue@3.4.27(typescript@5.4.5))
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.4.5)(vue@3.4.27(typescript@5.4.5))
@@ -39,6 +42,9 @@ importers:
       '@types/jsdom':
         specifier: ^21.1.6
         version: 21.1.7
+      '@types/lodash':
+        specifier: ^4.17.5
+        version: 4.17.5
       '@types/node':
         specifier: ^20.12.5
         version: 20.14.2
@@ -664,6 +670,9 @@ packages:
 
   '@types/jsdom@21.1.7':
     resolution: {integrity: sha512-yOriVnggzrnQ3a9OKOCxaVuSug3w3/SbOj5i7VwXWZEyUNl3bLF9V3MfxGbZKuwqJOQyRfqXyROBB1CoZLFWzA==}
+
+  '@types/lodash@4.17.5':
+    resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
 
   '@types/node@20.14.2':
     resolution: {integrity: sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==}
@@ -3361,6 +3370,8 @@ snapshots:
       '@types/node': 20.14.2
       '@types/tough-cookie': 4.0.5
       parse5: 7.1.2
+
+  '@types/lodash@4.17.5': {}
 
   '@types/node@20.14.2':
     dependencies:
