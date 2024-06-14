@@ -31,6 +31,12 @@ function loadVue2App(url: string, globalVar: string) {
   }
 }
 
+function loadVue3App(url: string) {
+  return async () => {
+    return import(`${url}/src/main.ts`)
+  }
+}
+
 const apps = [
   {
     name: 'app1',
@@ -42,6 +48,12 @@ const apps = [
     name: 'app2',
     app: loadVue2App('http://localhost:8082', 'app2'),
     activeWhen: (location: any) => location.pathname.startsWith('/app2'),
+    customProps: {}
+  },
+  {
+    name: 'app3',
+    app: loadVue3App('http://localhost:5174'),
+    activeWhen: (location: any) => location.pathname.startsWith('/app3'),
     customProps: {}
   }
 ]

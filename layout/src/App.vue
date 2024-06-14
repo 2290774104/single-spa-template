@@ -38,7 +38,13 @@ function getItem(
 
 const items: ItemType[] = reactive([
   getItem('子项目', '1', null, [
-    getItem('Vue', 'vue', null, [getItem('Vue2-1', 'app1'), getItem('Vue2-2', 'app2')], 'group')
+    getItem(
+      'Vue',
+      'vue',
+      null,
+      [getItem('Vue2-1', 'app1'), getItem('Vue2-2', 'app2'), getItem('Vue3+vite+ts', 'app3')],
+      'group'
+    )
   ])
 ])
 
@@ -68,4 +74,8 @@ const handleClick: MenuProps['onClick'] = (e) => {
   </a-layout>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.ant-layout-content {
+  overflow-y: auto;
+}
+</style>

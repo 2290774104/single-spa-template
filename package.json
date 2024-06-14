@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:layout": "cd ./layout&pnpm run dev",
     "dev:app1": "cd ./app1&pnpm run dev:micro",
-    "dev:app2": "cd ./app2&pnpm run dev:micro"
+    "dev:app2": "cd ./app2&pnpm run dev:micro",
+    "dev:app3": "cd ./app3&pnpm run dev:micro"
   },
   "keywords": [
     "vue",
