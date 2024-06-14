@@ -44,7 +44,8 @@ const items: ItemType[] = reactive([
       null,
       [getItem('Vue2-1', 'app1'), getItem('Vue2-2', 'app2'), getItem('Vue3+vite+ts', 'app3')],
       'group'
-    )
+    ),
+    getItem('React', 'react', null, [], 'group')
   ])
 ])
 
@@ -69,6 +70,7 @@ const handleClick: MenuProps['onClick'] = (e) => {
     ></a-layout-sider>
     <a-layout>
       <a-layout-header :style="headerStyle">子项目</a-layout-header>
+      <!-- #microApp 为子项目挂载/渲染容器 -->
       <a-layout-content :style="contentStyle" id="microApp"></a-layout-content>
     </a-layout>
   </a-layout>

@@ -27,7 +27,7 @@ function loadVue2App(url: string, globalVar: string) {
     await createScript(url + '/js/chunk-vendors.js')
     await createScript(url + '/js/app.js')
     // 这里的return很重要，需要从这个全局对象中拿到子应用暴露出来的生命周期函数
-    return window[globalVar]
+    return window[globalVar as keyof typeof window]
   }
 }
 
@@ -52,7 +52,7 @@ const apps = [
   },
   {
     name: 'app3',
-    app: loadVue3App('http://localhost:5174'),
+    app: loadVue3App('http://localhost:5173'),
     activeWhen: (location: any) => location.pathname.startsWith('/app3'),
     customProps: {}
   }
