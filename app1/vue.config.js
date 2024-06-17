@@ -3,7 +3,7 @@ const path = require('path');
 const package = require('./package.json');
 module.exports = defineConfig({
   lintOnSave: false,
-  publicPath: '//localhost:8081',
+  publicPath: process.env.VUE_APP_BASE_URL,
   devServer: {
     port: 8081
   },
