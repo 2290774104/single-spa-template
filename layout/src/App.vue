@@ -45,7 +45,7 @@ const items: ItemType[] = reactive([
       [getItem('Vue2-1', 'app1'), getItem('Vue2-2', 'app2'), getItem('Vue3+vite+ts', 'app3')],
       'group'
     ),
-    getItem('React', 'react', null, [], 'group')
+    getItem('React', 'react', null, [getItem('React18', 'app4')], 'group')
   ])
 ])
 

@@ -37,23 +37,35 @@ function loadVue3App(url: string) {
   }
 }
 
+function loadReactApp(url: string) {
+  return async () => {
+    return import(url + '/src/main.tsx')
+  }
+}
+
 const apps = [
   {
     name: 'app1',
-    app: loadVue2App('http://localhost:8081', 'app1'),
+    app: loadVue2App('http://localhost:8081/app1', 'app1'),
     activeWhen: (location: any) => location.pathname.startsWith('/app1'),
     customProps: {}
   },
   {
     name: 'app2',
-    app: loadVue2App('http://localhost:8082', 'app2'),
+    app: loadVue2App('http://localhost:8082/app2', 'app2'),
     activeWhen: (location: any) => location.pathname.startsWith('/app2'),
     customProps: {}
   },
   {
     name: 'app3',
-    app: loadVue3App('http://localhost:5173'),
+    app: loadVue3App('http://localhost:8083/app3'),
     activeWhen: (location: any) => location.pathname.startsWith('/app3'),
+    customProps: {}
+  },
+  {
+    name: 'app4',
+    app: loadReactApp('http://localhost:8084/app4'),
+    activeWhen: (location: any) => location.pathname.startsWith('/app4'),
     customProps: {}
   }
 ]
