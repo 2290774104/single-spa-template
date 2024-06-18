@@ -2,6 +2,8 @@
 
 single-spa 项目模板
 
+[文档地址](https://2290774104.github.io/blog/微前端/single-spa/single-spa示例.html)
+
 ## 基座项目 layout
 
 使用 vite+vue3+ts 搭建基座项目
