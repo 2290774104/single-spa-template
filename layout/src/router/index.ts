@@ -7,11 +7,11 @@ const router = createRouter({
 })
 
 // 处理vue2子应用来回切换报错
-router.beforeEach((to, from, next) => {
-  if (_.isEmpty(history.state.current)) {
-    _.assign(history.state, { current: from.fullPath })
-  }
-  next()
-})
+// router.beforeEach((to, from, next) => {
+//   if (_.isEmpty(history.state.current)) {
+//     _.assign(history.state, { current: from.fullPath })
+//   }
+//   next()
+// })
 
 export default router

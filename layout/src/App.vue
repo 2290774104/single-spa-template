@@ -51,9 +51,10 @@ const items: ItemType[] = reactive([
 
 const handleClick: MenuProps['onClick'] = (e) => {
   console.log('click', e)
-  router.push({
-    path: `/${e.key}`
-  })
+  // router.push({
+  //   path: `/${e.key}`
+  // })
+  window.history.pushState({}, '', `/${e.key}`)
 }
 </script>
 
